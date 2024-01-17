@@ -1,0 +1,37 @@
+17/01/24 10:06:47 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): raw.githubusercontent.com:443
+17/01/24 10:06:48 - DEBUG - urllib3.connectionpool - [_make_request]: https://raw.githubusercontent.com:443 "GET /rdavydov/Twitch-Channel-Points-Miner-v2/master/TwitchChannelPointsMiner/__init__.py HTTP/1.1" 200 125
+17/01/24 10:06:48 - INFO - TwitchChannelPointsMiner.TwitchChannelPointsMiner - [__init__]: Twitch Channel Points Miner v2-1.9.1 (fork by rdavydov)
+17/01/24 10:06:48 - INFO - TwitchChannelPointsMiner.TwitchChannelPointsMiner - [__init__]: https://github.com/rdavydov/Twitch-Channel-Points-Miner-v2
+17/01/24 10:06:48 - INFO - TwitchChannelPointsMiner.TwitchChannelPointsMiner - [__init__]: You are running version 1.9.1 of this script
+17/01/24 10:06:48 - INFO - TwitchChannelPointsMiner.TwitchChannelPointsMiner - [__init__]: The latest version on GitHub is 1.9.2
+17/01/24 10:06:48 - INFO - TwitchChannelPointsMiner.TwitchChannelPointsMiner - [run]: Start session: '670fe06c-ac4b-4e0a-bb4d-6cf1022e91ab'
+17/01/24 10:06:48 - INFO - TwitchChannelPointsMiner.classes.TwitchLogin - [login_flow]: You'll have to login to Twitch!
+17/01/24 10:06:48 - INFO - TwitchChannelPointsMiner.classes.TwitchLogin - [login_flow]: Trying the TV login method..
+17/01/24 10:06:48 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): id.twitch.tv:443
+17/01/24 10:06:51 - DEBUG - urllib3.connectionpool - [_make_request]: https://id.twitch.tv:443 "POST /oauth2/device HTTP/1.1" 200 164
+17/01/24 10:06:51 - INFO - TwitchChannelPointsMiner.classes.TwitchLogin - [login_flow]: Open https://www.twitch.tv/activate
+17/01/24 10:06:51 - INFO - TwitchChannelPointsMiner.classes.TwitchLogin - [login_flow]: and enter this code: LDCCRNJP
+17/01/24 10:06:51 - INFO - TwitchChannelPointsMiner.classes.TwitchLogin - [login_flow]: Hurry up! It will expire in 30 minutes!
+17/01/24 10:06:56 - DEBUG - urllib3.connectionpool - [_make_request]: https://id.twitch.tv:443 "POST /oauth2/token HTTP/1.1" 400 49
+17/01/24 10:07:01 - DEBUG - urllib3.connectionpool - [_make_request]: https://id.twitch.tv:443 "POST /oauth2/token HTTP/1.1" 400 49
+17/01/24 10:07:07 - DEBUG - urllib3.connectionpool - [_make_request]: https://id.twitch.tv:443 "POST /oauth2/token HTTP/1.1" 200 248
+17/01/24 10:07:07 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): gql.twitch.tv:443
+17/01/24 10:07:08 - DEBUG - urllib3.connectionpool - [_make_request]: https://gql.twitch.tv:443 "POST /gql HTTP/1.1" 200 204
+17/01/24 10:07:08 - INFO - TwitchChannelPointsMiner.classes.TwitchLogin - [save_cookies]: Saving cookies to your computer..
+17/01/24 10:07:08 - INFO - TwitchChannelPointsMiner.TwitchChannelPointsMiner - [run]: Loading data for 7 streamers. Please wait...
+17/01/24 10:07:08 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): www.twitch.tv:443
+17/01/24 10:07:09 - DEBUG - urllib3.connectionpool - [_make_request]: https://www.twitch.tv:443 "GET / HTTP/1.1" 200 None
+17/01/24 10:07:09 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [update_client_version]: Client version: b56bec68-95af-4e1d-af7b-add3b006e499
+17/01/24 10:07:09 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): gql.twitch.tv:443
+17/01/24 10:07:10 - DEBUG - urllib3.connectionpool - [_make_request]: https://gql.twitch.tv:443 "POST /gql HTTP/1.1" 200 203
+17/01/24 10:07:10 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [post_gql_request]: Data: {'operationName': 'ReportMenuItem', 'extensions': {'persistedQuery': {'version': 1, 'sha256Hash': '8f3628981255345ca5e5453dfd844efffb01d6413a9931498836e6268692a30c'}}, 'variables': {'channelLogin': 'pimpcs'}}, Status code: 200, Content: {"data":{"requestInfo":{"countryCode":"BR","__typename":"RequestInfo"},"user":{"id":"37799181","stream":null,"__typename":"User"}},"extensions":{"durationMilliseconds":45,"operationName":"ReportMenuItem","requestID":"01HMBRGR2EZ5PJ2Z0H3CMDWRM6"}}
+17/01/24 10:07:11 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): www.twitch.tv:443
+17/01/24 10:07:11 - DEBUG - urllib3.connectionpool - [_make_request]: https://www.twitch.tv:443 "GET / HTTP/1.1" 200 None
+17/01/24 10:07:12 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [update_client_version]: Client version: b56bec68-95af-4e1d-af7b-add3b006e499
+17/01/24 10:07:12 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): gql.twitch.tv:443
+17/01/24 10:07:13 - DEBUG - urllib3.connectionpool - [_make_request]: https://gql.twitch.tv:443 "POST /gql HTTP/1.1" 200 204
+17/01/24 10:07:13 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [post_gql_request]: Data: {'operationName': 'ReportMenuItem', 'extensions': {'persistedQuery': {'version': 1, 'sha256Hash': '8f3628981255345ca5e5453dfd844efffb01d6413a9931498836e6268692a30c'}}, 'variables': {'channelLogin': 'lobanjicaa'}}, Status code: 200, Content: {"data":{"requestInfo":{"countryCode":"BR","__typename":"RequestInfo"},"user":{"id":"126902046","stream":null,"__typename":"User"}},"extensions":{"durationMilliseconds":62,"operationName":"ReportMenuItem","requestID":"01HMBRGTM1ZXMPTQF7217ZP8MW"}}
+17/01/24 10:07:13 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): www.twitch.tv:443
+17/01/24 10:07:14 - DEBUG - urllib3.connectionpool - [_make_request]: https://www.twitch.tv:443 "GET / HTTP/1.1" 200 None
+17/01/24 10:07:14 - DEBUG - TwitchChannelPointsMiner.classes.Twitch - [update_client_version]: Client version: b56bec68-95af-4e1d-af7b-add3b006e499
+17/01/24 10:07:14 - DEBUG - urllib3.connectionpool - [_new_conn]: Starting new HTTPS connection (1): gql.twitch.tv:443
